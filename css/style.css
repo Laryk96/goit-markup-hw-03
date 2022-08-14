@@ -78,7 +78,6 @@ ul {
 
   margin-left: 93px;
 
-  width: 281px;
   height: 16px;
 }
 
@@ -89,6 +88,10 @@ ul {
   line-height: 1.14;
 
   text-decoration: none;
+}
+
+.portfolio,.contact{
+  margin-left: 50px;
 }
 
 /* logotype */
