@@ -1,3 +1,7 @@
+/* Global settings */
+html {
+}
+
 :root {
   --main-color-text: #757575;
   --titel-color-text: #212121;
@@ -10,10 +14,32 @@ body {
   color: var(--main-color-text);
   font-family: "Roboto", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
 }
 
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+}
 /* hover focus tab */
 
 .nav-link:hover,
@@ -26,6 +52,13 @@ body {
 }
 
 /* header */
+.header {
+  height: 80px;
+  padding-top: 24px;
+}
+
+.header .container {
+}
 
 .nav-link,
 .contact-link-top {
@@ -33,6 +66,19 @@ body {
 }
 
 /*  Navigation */
+.nav-page {
+  display: flex;
+  flex-direction: row;
+  margin-right: 93px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 93px;
+  width: 281px;
+  height: 16px;
+}
 
 .nav-link {
   color: var(--titel-color-text);
@@ -47,6 +93,9 @@ body {
 
 .logo {
   color: #000;
+  height: 31px;
+
+  display: inline-block;
 
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
@@ -63,6 +112,14 @@ body {
 }
 
 /* TOP Contacts */
+.contact-top {
+  display: flex;
+}
+
+.tel {
+  margin-left: 50px;
+}
+
 .contact-link-top {
   color: var(--main-color-text);
   font-weight: 500;
@@ -72,19 +129,30 @@ body {
 }
 
 /* Main */
+.header {
+  padding-top: 30px;
+}
 
 .bgd-main {
   background-color: var(--bgd-accent-color);
+  padding: 200px 0;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-title {
   color: var(--white-color-text);
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
+
+  width: 696px;
 }
 
 /* Batton */
@@ -92,24 +160,40 @@ body {
 .button {
   color: var(--white-color-text);
   background-color: var(--bgd-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  font-family: "Roboto";
+
+  min-width: 152px;
+
   border: none;
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
-  color: var(--bgd-button);
-  background-color: var(--white-color-text);
+.button:active {
+  background-color: #188ce8;
 }
-/* Section peculiarity */
 
+/* Section peculiarity */
+.peculiarity {
+  padding: 94px 0;
+
+
+}
+.list .subtitle {
+  width: 270px;
+}
 .subtitle {
   color: var(--titel-color-text);
+
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -124,6 +208,10 @@ body {
 
 /* Section works img */
 
+.work {
+  padding-bottom: 94px;
+}
+
 .title-work,
 .title-team {
   color: var(--titel-color-text);
@@ -131,25 +219,45 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /*  Section team */
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
 }
+
 .name {
   color: var(--titel-color-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 
 .status {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.card-bgd {
+  width: 270px;
+  min-height: 368px;
+
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
+ 
 }
 /* Footer */
 
@@ -163,6 +271,25 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  height: 253px;
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer .logo {
+  margin-left: 215px;
+  margin-bottom: 20px;
+
+
+}
+
+.contact-bot {
+  width: 231px;
+  height: 81px;
+  margin-left: 215px;
+
+
 }
 
 .contact-link-bot {
@@ -176,6 +303,11 @@ body {
 .footer > a,
 .map-link {
   color: var(--white-color-text);
+}
+
+.footer-email,
+.footer-tel {
+  margin-top: 9px;
 }
 
 /* 2 Main Portfolio */
