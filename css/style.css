@@ -269,9 +269,7 @@ ul {
 }
 /* Footer */
 
-.address {
-  font-style: normal;
-}
+
 
 .footer {
   background-color: var(--bgd-accent-color);
@@ -285,17 +283,22 @@ ul {
   padding-right: 15px;
 }
 
+.footer .container{
+flex-direction: column;
+}
+
 .footer .logo {
-  margin-left: 215px;
-  margin-bottom: 20px;
 
+}
 
+.address {
+  font-style: normal;
 }
 
 .contact-bot {
   width: 231px;
   height: 81px;
-  margin-left: 215px;
+
 
 
 }
