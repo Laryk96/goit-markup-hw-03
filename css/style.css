@@ -68,7 +68,6 @@ ul {
 /*  Navigation */
 .nav-page {
   display: flex;
-  flex-direction: row;
   margin-right: 93px;
 }
 
@@ -95,7 +94,6 @@ ul {
   color: #000;
   height: 31px;
 
-  display: inline-block;
 
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
@@ -104,6 +102,8 @@ ul {
   line-height: 1.92;
 
   text-decoration: none;
+
+  ;
 }
 
 /* logo - span */
@@ -183,9 +183,12 @@ ul {
 /* Section peculiarity */
 .peculiarity {
   padding: 94px 0;
-
-
 }
+
+.peculiarity  .list{
+  width: 270px;
+}
+
 .list .subtitle {
   width: 270px;
 }
