@@ -54,11 +54,12 @@ ul {
 /* header */
 .header {
   height: 80px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: flex;
 }
 
+
 .header .container {
+  align-items: center;
 }
 
 .nav-link,
@@ -69,17 +70,18 @@ ul {
 /*  Navigation */
 .nav-page {
   display: flex;
-  margin-right: 93px;
   align-items: center;
+
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
+
   margin-left: 93px;
+
   width: 281px;
   height: 16px;
-  margin-bottom: 32px;
 }
 
 .nav-link {
@@ -95,11 +97,8 @@ ul {
 
 .logo {
   color: #000;
-  height: 31px;
-  margin-bottom: 25px;
+  display: inline-block;
 
-  display:flex;
-  align-items: center;
 
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
@@ -113,14 +112,17 @@ ul {
 /* logo - span */
 .web {
   color: #2196f3;
+    display: inline-block;
 }
 
 /* TOP Contacts */
 .contact-top {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  height: 16px;
+  /* margin-bottom: 32px; */
 }
+
 .tel {
   margin-left: 50px;
 }
@@ -134,9 +136,6 @@ ul {
 }
 
 /* Main */
-.header {
-  padding-top: 30px;
-}
 
 .bgd-main {
   background-color: var(--bgd-accent-color);
@@ -186,6 +185,7 @@ ul {
 }
 
 /* Section peculiarity */
+
 .peculiarity {
   padding: 94px 0;
 }
