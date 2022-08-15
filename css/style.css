@@ -46,12 +46,12 @@ ul {
 }
 /* hover focus tab */
 
-.nav-link:hover,
-.nav-link:focus,
-.contact-top :hover,
-.contact-top :focus,
-.contact-bot :hover,
-.contact-bot :focus {
+.nav-page-list :hover,
+.nav-page-list :focus,
+.contact-header-list :hover,
+.contact-header-list :focus,
+.contact-footer-list :hover,
+.contact-footer-list :focus {
   color: var(--bgd-button);
 }
 
@@ -99,14 +99,14 @@ ul {
   display: flex;
 }
 
-.nav-list {
+.nav-page-list {
   display: flex;
   margin-left: 93px;
   align-items: center;
 }
 
-.portfolio-link,
-.contact-link:not(:first-child) {
+.portfolio-item,
+.contact-item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -121,21 +121,21 @@ ul {
 }
 
 .nav-link,
-.contact-link-top {
+.contact-header-link{
   letter-spacing: 0.02em;
 }
 
 /* TOP Contacts */
-.contact-top {
+.contact-header-list {
   display: flex;
   margin-left: auto;
 }
 
-.tel {
+.tel-item {
   margin-left: 50px;
 }
 
-.contact-link-top {
+.contact-header-link{
   text-decoration: none;
 
   color: var(--main-color-text);
@@ -147,7 +147,7 @@ ul {
 
 /* Main */
 
-.bgd-main {
+.hero-bgd {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +216,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.post {
+.descript {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -266,14 +266,14 @@ ul {
   margin-top: 30px;
 }
 
-.status {
+.prof {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-top: 10px;
 }
 
-.card-bgd {
+.card-list {
   width: 270px;
   min-height: 368px;
   border-radius: 0px 0px 4px 4px;
@@ -291,7 +291,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 
-  color: rgba(255, 255, 255, 0.6);
   background-color: var(--bgd-accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -311,11 +310,11 @@ ul {
   font-style: normal;
 }
 
-.contact-bot {
+.contact-footer-list {
   width: 231px;
 }
 
-.contact-link-bot {
+.contact-footer-link {
   color: var(--main-color-text);
   font-size: 14px;
   line-height: 1.14;
@@ -328,8 +327,8 @@ ul {
   color: var(--white-color-text);
 }
 
-.footer-email,
-.footer-tel {
+.footer-email-item,
+.footer-tel-item {
   margin-top: 9px;
 }
 
