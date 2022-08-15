@@ -87,6 +87,7 @@ ul {
 
 .logo.white {
   color: var(--white-color-text);
+  margin-bottom: 20px;
 }
 
 /* logo - span */
