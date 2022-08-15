@@ -335,7 +335,7 @@ ul {
 /* 2 Main Portfolio */
 
 /* filter */
-.filter {
+.filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
