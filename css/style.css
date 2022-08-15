@@ -391,10 +391,7 @@ ul {
   margin: 0 15px 30px;
   padding-bottom: 19px;
   background: #FFFFFF;
-  border: 1px solid #EEEEEE;
-
-  background-color: url(portfolio7.jpg);;
-  
+  border: 1px solid #EEEEEE; 
 }
 .project-card:nth-of-type(3n+1) {
   margin-left: 0;
