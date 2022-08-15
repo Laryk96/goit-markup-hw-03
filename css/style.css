@@ -1,15 +1,19 @@
 /* Global settings */
-html {
-}
-
 :root {
+  /* Text Color */
   --main-color-text: #757575;
   --titel-color-text: #212121;
   --white-color-text: #ffffff;
+  --logo-black--text: #000000;
+  --logo-blue-text: #2196f3; 
+
+  /* BGD Colors */
   --bgd-accent-color: #2f303a;
   --bgd-button: #2196f3;
   --bgd-button-filter: #f5f4fa;
 }
+
+/* Стандартные стили */
 
 body {
   color: var(--main-color-text);
@@ -26,6 +30,23 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+img{
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .list {
@@ -76,7 +97,7 @@ ul {
 .logo {
   font-family: "Raleway", sans-serif;
 
-  color: #000;
+  color: var(--logo-black--text);
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
@@ -92,7 +113,7 @@ ul {
 
 /* logo - span */
 .web {
-  color: var(--bgd-button);
+  color: var(--logo-blue-text);
 }
 
 /*  Navigation */
@@ -323,7 +344,7 @@ ul {
   text-decoration: none;
 }
 
-.footer > a,
+.footer > .logo,
 .map-link {
   color: var(--white-color-text);
 }
