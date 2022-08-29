@@ -68,12 +68,12 @@ img {
 }
 /* hover focus tab */
 
-.nav-page.list :hover,
-.nav-page.list :focus,
-.contact-header.list :hover,
-.contact-header.list :focus,
-.contact-footer-list :hover,
-.contact-footer-list :focus {
+.nav-link:hover,
+.nav-link:focus,
+.contact-header-link:hover,
+.contact-header-link:focus,
+.contact-footer-link:hover,
+.contact-footer-link:focus {
   color: var(--logo-blue-text);
 }
 
